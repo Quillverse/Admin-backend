@@ -1,0 +1,67 @@
+/* Main content styling */
+.main-content {
+	padding: 20px;
+  }
+  
+  .table-wrapper {
+	margin-top: 20px;
+  }
+  
+  .table-wrapper table {
+	width: 100%;
+	border-collapse: collapse;
+  }
+  
+  .table-wrapper th, .table-wrapper td {
+	border: 1px solid #ddd; /* Border between rows and columns */
+	padding: 8px;
+  }
+  
+  .table-wrapper th {
+	background-color: #f2f2f2; /* Background color for table header */
+	font-weight: bold;
+  }
+  
+  /* Pagination styling */
+  .pagination {
+	margin-top: 20px;
+  }
+  
+  .pagination a {
+	color: #333;
+	text-decoration: none;
+	display: inline-block;
+	padding: 5px 10px;
+	margin-right: 5px; /* Adjust spacing between numbers */
+	border: 1px solid #ccc;
+	border-radius: 3px;
+  }
+  
+  .pagination a:hover {
+	background-color: #f2f2f2;
+  }
+  
+  .pagination .active {
+	background-color: #007bff;
+	color: #fff;
+	border: 1px solid #007bff;
+  }
+  
+  .pagination a:hover,
+  .pagination .active {
+	cursor: pointer;
+  }
+  /* Delete button styling */
+  .btn-delete {
+	background-color: #dc3545;
+	color: #fff;
+	border: none;
+	border-radius: 3px;
+	padding: 5px 10px;
+	cursor: pointer;
+  }
+
+  .btn-delete:hover {
+	background-color: #c82333;
+  }
+  

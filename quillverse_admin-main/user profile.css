@@ -1,0 +1,301 @@
+/* ===== Google Font Import - Poppins ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    /* ===== Colors ===== */
+    /* --primary-color: #0E4BF1; */
+    --panel-color: #FFF;
+    --text-color: #000;
+    --black-light-color: #707070;
+    --border-color: #e6e5e5;
+    --toggle-color: #DDD;
+    --box1-color: #4DA3FF;
+    --box2-color: #FFE6AC;
+    --box3-color: #E7D1FC;
+    --title-icon-color: #fff;
+    
+    /* ====== Transition ====== */
+    --tran-05: all 0.5s ease;
+    --tran-03: all 0.3s ease;
+    --tran-03: all 0.2s ease;
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--primary-color);
+}
+body.dark{
+    --primary-color: #3A3B3C;
+    --panel-color: #242526;
+    --text-color: #CCC;
+    --black-light-color: #CCC;
+    --border-color: #4D4C4C;
+    --toggle-color: #FFF;
+    --box1-color: #3A3B3C;
+    --box2-color: #3A3B3C;
+    --box3-color: #3A3B3C;
+    --title-icon-color: #CCC;
+} 
+
+.data-names table tr{
+    /* padding-left: 20%; */
+    padding-right: 10%;
+}
+.data-names table tr th{
+    padding-right: 30px;
+}
+.data-names table tr td{
+    /* padding-top: 10px; */
+  /* padding-bottom: 20px; */
+  padding-left: 60px;
+  padding-right: 110px;
+
+}
+
+
+.data-names table tr td span{
+    padding-right: 50%;
+}
+.activity-data .data .data-list{
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+    white-space: nowrap;
+    color: var(--text-color);
+}
+
+@media (max-width: 1000px) {
+    nav{
+        width: 73px;
+    }
+    nav.close{
+        width: 250px;
+    }
+    nav .logo_name{
+        opacity: 0;
+        pointer-events: none;
+    }
+    nav.close .logo_name{
+        opacity: 1;
+        pointer-events: auto;
+    }
+    nav li a .link-name{
+        opacity: 0;
+        pointer-events: none;
+    }
+    nav.close li a .link-name{
+        opacity: 1;
+        pointer-events: auto;
+    }
+    nav ~ .dashboard{
+        left: 73px;
+        width: calc(100% - 73px);
+    }
+    nav.close ~ .dashboard{
+        left: 250px;
+        width: calc(100% - 250px);
+    }
+    nav ~ .dashboard .top{
+        left: 73px;
+        width: calc(100% - 73px);
+    }
+    nav.close ~ .dashboard .top{
+        left: 250px;
+        width: calc(100% - 250px);
+    }
+    .activity .activity-data{
+        overflow-X: scroll;
+    }
+}
+
+@media (max-width: 780px) {
+    .dash-content .boxes .box{
+        width: calc(100% / 2 - 15px);
+        margin-top: 15px;
+    }
+}
+@media (max-width: 560px) {
+    .dash-content .boxes .box{
+        width: 100% ;
+    }
+}
+@media (max-width: 400px) {
+    nav{
+        width: 0px;
+    }
+    nav.close{
+        width: 73px;
+    }
+    nav .logo_name{
+        opacity: 0;
+        pointer-events: none;
+    }
+    nav.close .logo_name{
+        opacity: 0;
+        pointer-events: none;
+    }
+    nav li a .link-name{
+        opacity: 0;
+        pointer-events: none;
+    }
+    nav.close li a .link-name{
+        opacity: 0;
+        pointer-events: none;
+    }
+    nav ~ .dashboard{
+        left: 0;
+        width: 100%;
+    }
+    nav.close ~ .dashboard{
+        left: 73px;
+        width: calc(100% - 73px);
+    }
+    nav ~ .dashboard .top{
+        left: 0;
+        width: 100%;
+    }
+    nav.close ~ .dashboard .top{
+        left: 0;
+        width: 100%;
+    }
+}
+/* Set a style for all buttons */
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  button:hover {
+    opacity:1;
+  }
+  
+  /* Float cancel and delete buttons and add an equal width */
+  .cancelbtn, .deletebtn {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Add a color to the cancel button */
+  .cancelbtn {
+    background-color: #ccc;
+    color: black;
+  }
+  
+  /* Add a color to the delete button */
+  .deletebtn {
+    background-color: #f44336;
+  }
+  
+  /* Add padding and center-align text to the container */
+  .container {
+    padding: 16px;
+    text-align: center;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #474e5d;
+    padding-top: 50px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* Style the horizontal ruler */
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+   
+  /* The Modal Close Button (x) */
+  .close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #f44336;
+    cursor: pointer;
+  }
+  
+  /* Clear floats */
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+
+
+  .menu-items .logout-mode{
+    padding-top: 10px;
+    border-top: 1px solid var(--border-color);
+}
+.menu-items .mode{
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+.menu-items .mode-toggle{
+    position: absolute;
+    right: 14px;
+    height: 50px;
+    min-width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.mode-toggle .switch{
+    position: relative;
+    display: inline-block;
+    height: 22px;
+    width: 40px;
+    border-radius: 25px;
+    background-color: var(--toggle-color);
+}
+.switch:before{
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 15px;
+    width: 15px;
+    background-color: var(--panel-color);
+    border-radius: 50%;
+    transition: var(--tran-03);
+}
+body.dark .switch:before{
+    left: 20px;
+}
